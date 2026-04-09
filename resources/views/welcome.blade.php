@@ -84,7 +84,7 @@
                 <div class="glow-blob" style="width: 200px; height: 200px; background: #7c3aed; bottom: -100px; right: -100px; animation-delay: -5s;"></div>
 
                 <div class="">
-                    <p><strong>WIBU</strong></p>
+                    <p><strong>MUSIC</strong></p>
                 </div>
 
             </div>
