@@ -50,7 +50,7 @@
     <body class="antialiased">
         
         <!-- Background Blobs -->
-        <div class="glow-blob" style="width: 400px; height: 400px; background: #f97316; top: -100px; left: -100px;"></div>
+        <div class="glow-blob" style="width: 400px; height: 400px; background: #f91616; top: -100px; left: -100px;"></div>
         <div class="glow-blob" style="width: 300px; height: 300px; background: #7c3aed; bottom: -50px; right: -50px; animation-delay: -5s;"></div>
 
         <main style="display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem;">
@@ -79,6 +79,12 @@
                     <a href="https://github.com" style="background: rgba(255,255,255,0.1); color: white; padding: 1rem 2rem; border-radius: 1rem; font-weight: 600; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
                         GitHub
                     </a>
+                </div>
+
+                <div class="glow-blob" style="width: 200px; height: 200px; background: #7c3aed; bottom: -100px; right: -100px; animation-delay: -5s;"></div>
+
+                <div class="">
+                    <p><strong>WIBU</strong></p>
                 </div>
 
             </div>
