@@ -2,36 +2,37 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 
 class HeavyController extends Controller
 {
     public function index()
     {
-        // 1. CPU Stress: Kalkulasi Fibonacci secara rekursif (Berat!)
-        $this->calculateFibonacci(30);
-
-        // 2. Memory Stress: Membuat array raksasa di dalam RAM
-        $memoryHog = [];
-        for ($i = 0; $i < 500000; $i++) {
-            $memoryHog[] = "Data Korupsi Pejabat Ke-" . $i . " - Lorem Ipsum Dolor Sit Amet";
+        // 1. CPU STRESS: Hashing super berat (Cost 12)
+        // Kita paksa CPU mikir keras selama 2 detik
+        $start = microtime(true);
+        while (microtime(true) - $start < 2.0) { 
+            password_hash("beban_rakyat", PASSWORD_BCRYPT, ['cost' => 12]);
         }
 
-        // 3. Disk I/O Stress: Logging berlebihan
-        Log::info("User mengakses data kasus korupsi pada " . now());
+        // 2. RAM STRESS: Alokasi Memory Agresif
+        ini_set('memory_limit', '512M');
+        $storage = [];
+        // Kita isi RAM sampai sekitar 400MB+
+        for ($i = 0; $i < 45; $i++) {
+            $storage[] = str_repeat(bin2hex(random_bytes(1024)), 5000); 
+        }
 
         $kasusKorupsi = [
-            ['nama' => 'Kasus Bansos', 'aktor' => 'Eks Mensos', 'nominal' => 'Rp 32,4 Miliar'],
-            ['nama' => 'Kasus Timah', 'aktor' => 'Harvey Moeis, dkk', 'nominal' => 'Rp 300 Triliun'],
-            ['nama' => 'Kasus BLBI', 'aktor' => 'Grup Sjamsul Nursalim', 'nominal' => 'Rp 4,58 Triliun'],
-            ['nama' => 'Kasus Jiwasraya', 'aktor' => 'Benny Tjokro, dkk', 'nominal' => 'Rp 16,8 Triliun'],
+            ['nama' => 'Syahrul Yasin Limpo', 'nominal' => 'Rp 44,5 M', 'status' => '🔴 KRITIS'],
+            ['nama' => 'Harvey Moeis (Timah)', 'nominal' => 'Rp 300 T', 'status' => '🔴 OVERLOAD'],
+            ['nama' => 'Setya Novanto (E-KTP)', 'nominal' => 'Rp 2,3 T', 'status' => '🔴 LAG'],
+            ['nama' => 'Rafael Alun', 'nominal' => 'Rp 53,7 M', 'status' => '🔴 MEMORY LEAK'],
         ];
 
-        return view('landing_heavy', compact('kasusKorupsi'));
-    }
+        // Ambil pemakaian memori saat ini dalam MB
+        $mem_usage = round(memory_get_usage(true) / 1024 / 1024, 2);
 
-    private function calculateFibonacci($n) {
-        if ($n <= 1) return $n;
-        return $this->calculateFibonacci($n - 1) + $this->calculateFibonacci($n - 2);
+        // BALIKKAN KE VIEW (Pastikan variabel $mem_usage ada di sini!)
+        return view('landing_heavy', compact('kasusKorupsi', 'mem_usage'));
     }
 }
