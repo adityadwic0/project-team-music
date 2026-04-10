@@ -158,13 +158,13 @@
                         </div>
                     </a>
 
-                    <a href="/test-load" class="choice-card stress-test">
+                    <a href="/stress-test" class="choice-card stress-test">
                         <div>
                             <div style="color: #ef4444; font-weight: 800; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 4px;">
                                 <span class="flex h-2 w-2 rounded-full bg-red-500"></span>
                                 03. STRESS TEST
                             </div>
-                            <div style="font-size: 0.75rem; color: #fca5a5;">Uji beban server dengan data Kasus Korupsi (Resource Heavy).</div>
+                            <div style="font-size: 0.75rem; color: #fca5a5;">Uji beban server(Resource Heavy).</div>
                         </div>
                     </a>
                 </div>
