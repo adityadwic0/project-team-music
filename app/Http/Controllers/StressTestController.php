@@ -30,4 +30,4 @@ class StressTestController extends Controller
         ]);
     }
 }
-}
+
