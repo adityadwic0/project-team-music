@@ -69,7 +69,7 @@
                 </h1>
 
                 <p style="color: #9ca3af; font-size: 1.25rem; margin-bottom: 2.5rem; line-height: 1.6;">
-                    The PHP framework for Web Profesional. <br>Build something beautiful today.
+                    The PHP framework for Web Professionals.
                 </p>
 
                 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
