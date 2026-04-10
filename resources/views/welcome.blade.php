@@ -79,13 +79,12 @@
                     <a href="https://github.com" style="background: rgba(255,255,255,0.1); color: white; padding: 1rem 2rem; border-radius: 1rem; font-weight: 600; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
                         GitHub
                     </a>
+                    <a href="/landing" style="background: rgba(255, 0, 0, 0.1); color: white; padding: 1rem 2rem; border-radius: 1rem; font-weight: 600; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
+                        Landing
+                    </a>
                 </div>
 
                 <div class="glow-blob" style="width: 200px; height: 200px; background: #7c3aed; bottom: -100px; right: -100px; animation-delay: -5s;"></div>
-
-                <div class="">
-                    <p><strong>MUSIC</strong></p>
-                </div>
 
             </div>
         </main>
