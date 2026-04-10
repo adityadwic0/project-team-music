@@ -68,6 +68,10 @@
                     Laravel <span style="color: #f97316;">Craft</span>
                 </h1>
 
+                <p style="color: #9ca3af; font-size: 1.25rem; margin-bottom: 2.5rem; line-height: 1.6;">
+                    The PHP framework for Web Professionals.
+                </p>
+
                 <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
                     <a href="https://laravel.com" style="background: white; color: black; padding: 1rem 2rem; border-radius: 1rem; font-weight: 600; text-decoration: none; transition: 0.3s; transform: scale(1);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
                         Get Started
