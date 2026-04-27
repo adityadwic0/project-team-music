@@ -28,11 +28,11 @@
                 50% { box-shadow: 0 0 30px rgba(239, 68, 68, 0.6); border-color: #ef4444; }
             }
 
-            body { 
-                background-color: var(--bg); 
-                color: white; 
-                margin: 0; 
-                font-family: 'Instrument Sans', sans-serif; 
+            body {
+                background-color: var(--bg);
+                color: white;
+                margin: 0;
+                font-family: 'Instrument Sans', sans-serif;
                 overflow: hidden;
                 display: flex;
                 align-items: center;
@@ -131,7 +131,7 @@
         </style>
     </head>
     <body class="antialiased">
-        
+
         <div class="glow-blob" style="width: 500px; height: 500px; background: #ea580c; top: -150px; left: -100px;"></div>
         <div class="glow-blob" style="width: 400px; height: 400px; background: #4f46e5; bottom: -100px; right: -50px; animation-delay: -5s;"></div>
         <div class="glow-blob" style="width: 300px; height: 300px; background: #b91c1c; top: 40%; left: 60%; animation-delay: -2s;"></div>
@@ -139,7 +139,7 @@
         <main>
             <div class="glass-card">
                 <span class="badge">SYSTEM READY v2.0</span>
-                
+
                 <h1>OS <span style="color: var(--primary);">Craft</span> Nexus</h1>
                 <p class="subtitle">Pilih lingkungan kerja Laravel Anda atau jalankan simulasi beban sistem.</p>
 
@@ -165,6 +165,15 @@
                                 03. STRESS TEST
                             </div>
                             <div style="font-size: 0.75rem; color: #fca5a5;">Uji beban server(Resource Heavy).</div>
+                        </div>
+                    </a>
+                    <a href="/stress-test" class="choice-card stress-test">
+                        <div>
+                            <div style="color: #ef4444; font-weight: 800; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 4px;">
+                                <span class="flex h-2 w-2 rounded-full bg-red-500"></span>
+                                04. GILA
+                            </div>
+                            <div style="font-size: 0.75rem; color: #fca5a5;">Tutor menjadi gila(Resource Heavy).</div>
                         </div>
                     </a>
                 </div>
