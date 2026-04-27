@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HeavyController;
 use App\Http\Controllers\StressTestController;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
