@@ -216,12 +216,12 @@
                     </div>
                 </a>
 
-                <a href="/" class="choice-card stress-test">
+                <a href="/ubuntu" class="choice-card stress-test">
                     <div>
                         <div
                             style="color: #ef4444; font-weight: 800; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 4px;">
                             <span class="flex h-2 w-2 rounded-full bg-red-500"></span>
-                            04. GILA
+                            04. Ubuntu
                         </div>
                         <div style="font-size: 0.75rem; color: #fca5a5;">Tutor menjadi gila(Resource Heavy).</div>
                     </div>
