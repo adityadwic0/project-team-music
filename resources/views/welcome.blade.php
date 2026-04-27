@@ -227,11 +227,6 @@
                     </div>
                 </a>
             </div>
-
-            <div style="margin-top: 3rem; display: flex; gap: 1rem; justify-content: center;">
-                <a href="https://laravel.com/docs" class="btn btn-primary">Documentation</a>
-                <a href="#" class="btn btn-outline">System Config</a>
-            </div>
         </div>
     </main>
 
