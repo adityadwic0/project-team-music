@@ -19,4 +19,6 @@ Route::get('/zen', function () {
 
 Route::get('/test-load', [HeavyController::class, 'index']);
 
-Route::get('/stress-test', [StressTestController::class, 'index']);
+Route::get('/dod', function(){
+    return view('dod');
+});
